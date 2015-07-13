@@ -142,7 +142,18 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
   //Code Here
+var removeItem = function(list, boughtItem) {
+  var listPlace = list.indexOf(boughtItem);
+  if(listPlace !== -1) {
+    list.splice(listPlace, 1);
+  }
+  return list;
+}
 
+var addItem = function(list, toAdd) {
+  list.push(toAdd);
+  return list;
+}
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
