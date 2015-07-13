@@ -5,7 +5,9 @@ var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
 
   //Code Here
-
+var first = function(arr) {
+  return arr.shift();
+}
 
 //Next problem
 
@@ -16,7 +18,9 @@ var arr = [40,50,60];
 
 
   //Code Here
-
+var last = function(arr) {
+  return arr.pop();
+}
 
 //Next Problem
 
@@ -25,6 +29,10 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
   //Code Here
+var looper = function(arr) {
+  for (var i = 0; i < arr.length; i++)
+    alert(arr[i]);
+}
 
 
 //Next problem
